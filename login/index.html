@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <title>Password validation field</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+</head>
+
+<body>
+
+    <!-- inserimento e-mail -->
+    <div class="container ">
+        <label for="campoEmail">E-mail</label>
+        <input type="email" id="campoEmail">
+
+        <!-- inserimento password -->
+        <div class="container">
+            <label for="campoPassword">Password</label>
+            <input type="password" id="campoPassword">
+            <div class="icon">
+                <i class="mostra bx bx-show nascondi"></i>
+                <i class="slash bx bx-hide"></i>
+            </div>
+            <div class="check-validi nascondi">
+                <ul class="listaControlli">
+                    <li><i class="bx bx-check"></i>Lettera minuscola</li>
+                    <li><i class="bx bx-check"></i>Lettera maiuscola</li>
+                    <li><i class="bx bx-check"></i>Numero</li>
+                    <li><i class="bx bx-check"></i>Almeno 8 caratteri</li>
+                </ul>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hackthegame</title>
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <!--Bootstrap Icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!--Font Google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aboreto&family=Alegreya+Sans:wght@300;400;500&family=Dancing+Script:wght@500&family=Jura:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nova+Square&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Orbitron:wght@400;500;600;700;800;900&family=Quicksand:wght@500;600;700&family=Rajdhani:wght@600;700&family=Raleway:ital,wght@0,200;0,300;1,100;1,200&family=Roboto+Slab:wght@100;200;300;400;500;600&family=Roboto:ital,wght@0,300;1,100&family=Unbounded:wght@300;400&display=swap"
+    rel="stylesheet">
+  <!--My style CSS-->
+  <link rel="stylesheet" href="./css/global.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-transparent" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-4 pt-0 pb-0" href="#">
+        <img src=".//downloads/logo-hackthegame.png" width="130" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+        aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav f-p ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fs-5" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              🌏
+            </a>
+            <ul class="dropdown-menu bg-secondary">
+              <li><a class="dropdown-item text-black fw-bold" href="./it/it.html">IT</a></li>
+              <li><a class="dropdown-item text-black fw-bold" href="index.html">EN</a></li>
+              <li><a class="dropdown-item text-black fw-bold" href="./es/es.html">ES</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item me-md-1">
+            <a class="nav-link f-s" href="#">Login</a>
+          </li>
+
+          <li class="nav-item me-md-1">
+            <a class="nav-link f-s" href="./login/index.html">Register</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header>
+    <div class="overlay"></div>
+    <div class="container h-100">
+      <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-8 col-md-5 text-center">
+          <h1 class="display-4 f-o text-white"></h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section>
+    <div data-bs-spy="scroll" data-bs-offset="0" tabindex="0" class="container-fluid my-3 py-5 px-5 ">
+      <div class="row">
+        <div class="col-3 d-none d-md-block py-3">
+          <div class="filter-positioning">
+            <p class="f-s text-white h3">
+              New Releases
+            </p>
+            <ul class="list-unstyled f-p text-secondary">
+              <li id="clickByNew" class="my-3 fw-bold">
+                <span>Order by newest
+                  <i class="bi bi-arrow-down"></i>
+                </span>
+              </li>
+              <li id="clickByOld" class="my-3 fw-bold">
+                <span>
+                  Order by oldest
+                  <i class="bi bi-arrow-up ps-2"></i>
+                </span>
+              </li>
+            </ul>
+            <hr class="colorRed">
+            <p id="clickByRating" class="f-s text-white h3">Top Scored</p>
+
+            <p id="clickAll" class="f-s text-white h3">All Games</p>
+
+            <p class="f-s text-white h3">Platforms</p>
+            <div id="platforms">
+              <!-- <img id="Linux" src="./downloads/linux.png" width="20" alt="">
+              <img id="PlayStation" src="./downloads/play-station.png" width="20" alt="">
+              <img id="Xbox" src="./downloads/xbox.png" width="20" alt="">
+              <img id="PC" src="./downloads/windows-10.png" width="20" alt="">
+              <img id="Nintendo" src="./downloads/nintendo-switch.png" width="20" alt="">
+              <img id="Mac" src="./downloads/client-mac.png" width="20" alt="">
+              <img id="Phone" src="./downloads/phone.png" width="20" alt=""> -->
+            </div>
+
+
+            <p>
+              <span class="f-s text-white h3 " data-bs-toggle="collapse" href="#genres" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Genres
+              </span>
+            </p>
+
+            <div class="collapse  text-white f-s " id="genres" role="button">
+
+              <!--
+                <p id="Action" class="f-p text-white mb-1" role="button"> Action</p>
+                <p id="Adventure" class="f-p text-white mb-1" role="button"> Adventure</p>
+                <p id="Arcade" class="f-p text-white mb-1" role="button"> Arcade</p>
+                <p id="Casual" class="f-p text-white mb-1" role="button">Casual</p>
+                <p id="Educational" class="f-p text-white mb-1" role="button">Educational</p>
+                <p id="Indie" class="f-p text-white mb-1" role="button"> Indie</p>
+                <p id="Massively Multiplayer" class="f-p text-white mb-1" role="button">Massively Multiplayer</p>
+                <p id="Platformer" class="f-p text-white mb-1" role="button">Platformer</p>
+                <p id="RPG" class="f-p text-white mb-1" role="button">RPG</p>
+                <p id="Shooter" class="f-p text-white mb-1" role="button">Shooter</p>
+                <p id="Simulation" class="f-p text-white mb-1" role="button">Simulation</p>
+                <p id="Sports" class="f-p text-white mb-1" role="button">Sports</p>
+                <p id="Strategy" class="f-p text-white mb-3" role="button">Strategy</p>
+                -->
+
+            </div>
+
+
+
+            <p>
+              <span class="f-s text-white h3 " data-bs-toggle="collapse" href="#stores" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Stores
+              </span>
+            </p>
+
+            <div class="collapse text-white f-s" id="stores" role="button">
+              <!--<p id="Steam" class="f-p text-white mb-1" role="button"> Steam</p>
+                <p id="PlayStation Store" class="f-p text-white mb-1" role="button"> PlayStation Store</p>
+                <p id="Xbox Store" class="f-p text-white mb-1" role="button">Xbox Store</p>
+                <p id="Epic Games" class="f-p text-white mb-1" role="button">Epic Games</p>
+                <p id="Nintendo Store" class="f-p text-white mb-1" role="button">Nintendo Store</p>
+                <p id="GOG" class="f-p text-white mb-1" role="button">GOG</p>-->
+            </div>
+            <div class="input-group mb-5">
+              <input id="searchGame" type="text" class="form-control rounded-2 px-3 py-2 f-p bg-black mt-2 p-3"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9 p-0 bg-black">
+          <div class="pb-1 opacity-75 mb-5 search-positioning1 bg-black sticky-md-top pt-5">
+            <p class="fs-2 text-center d-md-none d-block text-white f-s">New and trending games</p>
+            <p class="display-5 d-md-block d-none text-white f-s">New and trending games</p>
+            <p class="d-md-block d-none text-md-start text-center text-white f-s">Based on player counts and release
+              date</p>
+
+          </div>
+          <div id="load" class="d-flex align-items-center justify-content-around mb-3">
+            <strong class="text-white f-p">Loading games...</strong>
+            <div class="spinner-border text-white" role="status" aria-hidden="true"></div>
+          </div>
+
+          <div id="gamesWrapper" class="row mb-5">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer mt-3">
+    <div class="container-fluid container-footer mt-5">
+      <div class="row d-flex flex-wrap mt-5">
+        <div class="footer-col col-md-3 col-11 text-md-start text-center">
+          <h4 class="f-p">Company</h4>
+          <ul class="ul-footer f-s">
+            <li><a href="#">About us</a> </li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Affiliate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col col-md-3 col-11 text-md-start text-center">
+          <h4 class="f-p">Get Help</h4>
+          <ul class="ul-footer f-s">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Payment options</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Partnership</a></li>
+
+          </ul>
+        </div>
+        <div class="footer-col col-md-3 col-11 text-md-start text-center">
+          <h4 class="f-p">Game Request</h4>
+          <ul class="ul-footer f-s">
+            <li><a href="#">Check the status</a></li>
+            <li><a href="#">Order again</a></li>
+            <li><a href="#">Gift a game to your friend</a></li>
+
+          </ul>
+        </div>
+        <div class="footer-col col-md-3 col-11 text-md-start text-center">
+          <h4 class="f-p">Follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="bi bi-facebook fs-5"></i></a>
+            <a href="#"><i class="bi bi-twitter fs-5"></i></a>
+            <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hackthegame</title>
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Alegreya+Sans:wght@300;400;500&family=Dancing+Script:wght@500&family=Jura:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nova+Square&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Orbitron:wght@400;500;600;700;800;900&family=Quicksand:wght@500;600;700&family=Rajdhani:wght@600;700&family=Raleway:ital,wght@0,200;0,300;1,100;1,200&family=Roboto+Slab:wght@100;200;300;400;500;600&family=Roboto:ital,wght@0,300;1,100&family=Unbounded:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./downloads/logo-hackthegame.png" width="150" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav f-p ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link f-s" href="#">Accedi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link f-s" href="../login/index.html">Registrati</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-7 h-100">
+
+                <span id="iconsPlatformsGame"
+                    class="d-flex align-items-center justify-content-evenly justify-content-md-start">
+                </span>
+                <div class="d-flex justify-content-center d-md-block">
+                    <span class="f-o small text-white text-uppercase m-0 mt-4">giocato in media: <span
+                            id="playtime"></span></span>
+
+                </div>
+
+                <p id="name" class="mt-5 mb-5 display-3 text-white text-md-start text-center f-s fw-bold">Titolo del
+                    gioco</p>
+
+
+                <div class="d-flex justify-content-evenly d-md-block">
+                    <button class="btn btn-outline-secondary rounded-0 f-p mt-3 mt-md-0">
+                        <i class="bi bi-plus-lg"></i>
+                        Scrivi una recensione
+                    </button>
+                    <button class="btnContactSeller btn btn-outline-danger rounded-0 f-p mt-3 mt-md-0">
+                        <i class="bi bi-person"></i>
+                        Contatta il venditore
+                    </button>
+
+                </div>
+
+                <div class="mt-5 mb-5">
+                    <p class="lead f-p text-white">Recensioni sulla trama</p>
+                    <div id="plotReviews">
+                    </div>
+                </div>
+                <div class="mt-5 mt-md-2">
+                    <p class="text-secondary text-center text-md-start h3 f-p">Informazioni generali</p>
+                    <p class="text-white text-center text-md-start f-p ">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Aliquid
+                        vel doloribus perferendis deserunt quod, reiciendis necessitatibus eum aut soluta debitis
+                        architecto ut a voluptatum ipsum laudantium quasi! Quaerat, ea cum? Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Aut quam soluta sed dolorum ex minus tempore distinctio veritatis
+                        hic nobis. Totam ad beatae suscipit unde odit reprehenderit placeat modi sapiente? Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Nihil delectus, voluptates, fugit maiores aliquam
+                        accusamus adipisci culpa consequatur quos quibusdam reprehenderit repellat facere aperiam
+                        distinctio nesciunt veritatis rerum, suscipit numquam?</p>
+                </div>
+                <div class="mt-5 mt-md-0">
+                    <p class="text-secondary f-p  fs-5 fw-bold text-center text-md-start">Piattaforme</p>
+                    <ul id="platforms"
+                        class="list-unstyled f-p d-flex flex-column text-center text-md-start flex-md-row">
+                    </ul>
+                </div>
+                <hr class="text-white d-block d-md-none">
+                <div>
+                    <p class="text-secondary fs-5 fw-bold text-center text-md-start f-p">Genere</p>
+                    <ul id="genres" class="list-unstyled d-flex justify-content-center justify-content-md-start">
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-5">
+                <img src="" class="img-fluid gameImage d-none d-md-flex" alt="">
+                <div class="row align-items-center justify-content-around my-md-5 my-0">
+                    <div class="col-5">
+                        <img src="" class="img-fluid gameImage1 d-none d-md-flex" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="" class="img-fluid gameImage2 d-none d-md-flex" alt="">
+                    </div>
+                </div>
+                <hr class="text-white d-block d-md-none">
+                <div class="mb-5">
+                    <p class="f-p text-secondary  fs-6 fw-bold text-center text-md-start">Dove comprarlo</p>
+                    <ul class="list-unstyled d-flex flex-column flex-md-row justify-content-md-start ecommerceWrapper">
+                        <!-- <li>
+                            <button class="btn btn-outline-secondary">
+                                ecommerce
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn btn-outline-secondary">
+                                ecommerce
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn btn-outline-secondary">
+                                ecommerce
+                            </button>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="mb-5">
+                    <p class="f-p text-secondary fw-bold fs-6">Top contributors</p>
+                    <ul id="contributors" class="list-unstyled">
+                        <li class="w-100 d-flex justify-content-between border-bottom border-1 border-secondary py-3">
+                            <div>
+                                <p class="m-0 f-p text-white">Nome contributor</p>
+                                <p class="m-0 small text-secondary f-p">12 edizioni</p>
+                            </div>
+                            <button class="btn btn-outline-secondary small f-p rounded-0">+ Follow</button>
+                        </li>
+                        <li class="w-100 d-flex justify-content-between border-bottom border-1 border-secondary py-3">
+                            <div>
+                                <p class="m-0 f-p text-white">Nome contributor</p>
+                                <p class="m-0 small text-secondary f-p">12 edizioni</p>
+                            </div>
+                            <button class="btn btn-outline-secondary small f-p rounded-0">+ Follow</button>
+                        </li>
+                        <li class="w-100 d-flex justify-content-between border-bottom border-1 border-secondary py-3">
+                            <div>
+                                <p class="m-0 f-p text-white">Nome contributor</p>
+                                <p class="m-0 small text-secondary f-p">12 edizioni</p>
+                            </div>
+                            <img src="./downloads/avi/1.png" height="60px">
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-md-flex d-none ms-5 justify-content-center" id="related"></div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer class="footer mt-md-3 mt-0">
+        <div class="container-fluid container-footer mt-5">
+            <div class="row d-flex flex-wrap mt-5">
+                <div class="footer-col col-md-3 col-11 text-md-start text-center">
+                    <h4 class="f-p">Company</h4>
+                    <ul class="ul-footer f-s">
+                        <li><a href="#">Scopri di più</a> </li>
+                        <li><a href="#">I nostri servizi</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-3 col-11 text-md-start text-center">
+                    <h4 class="f-p">Serve aiuto?</h4>
+                    <ul class="ul-footer f-s">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Metodi di pagamento</a></li>
+                        <li><a href="#">Contattaci</a></li>
+                        <li><a href="#">Partnership</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col col-md-3 col-11 text-md-start text-center">
+                    <h4 class="f-p">Come richiederli</h4>
+                    <ul class="ul-footer f-s">
+                        <li><a href="#">Controlla stato ordine</li>
+                        <li><a href="#">Ordina di nuovo</a></li>
+                        <li><a href="#">Regala ad un amico</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col col-md-3 col-11 text-md-start text-center">
+                    <h4 class="f-p">Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../game.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

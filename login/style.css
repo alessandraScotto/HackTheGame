@@ -1,0 +1,102 @@
+:root { 
+    --white:#f2f6fc;
+    --black:#0a0a0a;
+    --red: #be1818;
+}
+
+*, 
+::before,
+::after { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Delicious Handrawn', cursive;
+    background-color: var(--black);
+    color: var(--red);
+}
+.container { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: min(90%-250px);
+}
+label { 
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+#campoPassword { 
+    position: relative;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 25px;
+    padding-right: 52px;
+    border-radius: 25px;
+    letter-spacing: 3px;
+    border: none;
+    outline: none;
+    transition:.2s ease;
+}
+#campoEmail { 
+    position: relative;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 25px;
+    padding-right: 52px;
+    border-radius: 25px;
+    letter-spacing: 3px;
+    border: none;
+    outline: none;
+    transition:.2s ease;
+}
+.icon i {
+    position: absolute;
+    color: var(--red);
+    line-height: 45px;
+    font-size: 25px;
+    right: 22px;
+    top: 60px;
+}
+.check-validi { 
+margin: 20px 0;
+padding: 20px 25px;
+background-color: var(--red);
+border-radius: 25px;
+transition: .2s ease;
+opacity: 1;
+}
+.check-validi ul { 
+list-style: none;
+}
+
+.check-validi ul li { 
+position: relative;
+font-size: 25px;
+font-weight: 200;
+letter-spacing: 3px;
+margin: 8px 0;
+color: var(--black);
+transition: .2s;
+}
+.check-validi ul li i { 
+font-size: 20px;
+margin-right: 8px;
+}
+.check-validi ul li.checked { 
+    color: var(--white);
+    font-weight: 500;
+}
+.nascondi { 
+    opacity: 0;
+}
