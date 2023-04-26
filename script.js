@@ -18,11 +18,16 @@ setTimeout(() => {
       const gamesNoSort = structuredClone(games)
       //////////////// INZIO MANIPOLAZIONE DOM ///////////////////////////
 
-      ///// #searchGame
       //selezioniamo il campo di immissione dati #searchGame
       const searchGame = document.getElementById('searchGame');
       //diamogli l'attributo placeholder valorizzato con il nr di giochi presenti in catalogo
-      searchGame.setAttribute("placeholder", `Cerca tra ${dataClone.results.length} giochi...`)
+      searchGame.setAttribute("placeholder", `Cerca tra ${dataClone.results.length} giochi...` )
+      searchGame.addEventListener('input', (e)=>{
+        showGames(sortingByName(gamesNoSort, e.key, searchGame.value))
+        //console.log(e)
+      })
+      
+      
       /// #load
       // inizializziamo e valorizzioma la constante load che fa rifermento al div #load che contiene l'icona di caricamento
       const load = document.getElementById('load');
@@ -197,6 +202,18 @@ setTimeout(() => {
       const sortingByRating = (data) => {
         return data.filter(game => game.metacritic !== null).sort((a, b) => b.metacritic - a.metacritic)
       }
+      const sortingByName = (data, e, searchGame)=>{
+        //const newData = data.map(game=>game.slug.split(""))
+        //console.log(newData)
+        return data.filter(game =>
+          //game.slug.split("")
+          {//console.log(game.slug[0]+" "+searchGame) 
+          return searchGame == game.slug.slice(0, searchGame.length)}
+        
+          
+        )
+      }
+
       function filterGames(sortingBy, games, idButton) {
         let button = document.getElementById(idButton)
         button.addEventListener('click', () => {

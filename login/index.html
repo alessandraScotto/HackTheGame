@@ -9,8 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
     <title>Password validation field</title>
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Alegreya+Sans:wght@300;400;500&family=Dancing+Script:wght@500&family=Jura:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nova+Square&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Orbitron:wght@400;500;600;700;800;900&family=Quicksand:wght@500;600;700&family=Rajdhani:wght@600;700&family=Raleway:ital,wght@0,200;0,300;1,100;1,200&family=Roboto+Slab:wght@100;200;300;400;500;600&family=Roboto:ital,wght@0,300;1,100&family=Unbounded:wght@300;400&display=swap"
+        rel="stylesheet">
     <!-- link css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <!-- Boxicons link -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 
@@ -18,12 +24,66 @@
 
 <body>
 
-    <!-- inserimento e-mail -->
-    <div class="container ">
+    <div class="form-box">
+        <h2 class="f-o">Login here</h2>
+        <div class="divMain">
+            <div class="div-log" id="LoginBtn">
+                <p id="signin" class="p-log f-s">Login</p>
+            </div>
+            <div class="div-log" id="RegistrationBtn">
+                <p id="signup" class="p-log f-s">Registration</p>
+            </div>
+        </div>
+
+        <div id="idLogin" class="divReg">
+            <div class="input-box">
+                <input id="name" type="text" placeholder="Account name">
+            </div>
+            <div class="input-box">
+                <input id="email" type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input id="password" type="password" placeholder="Password">
+            </div>
+            <div class="input-box">
+                <input id="confirmPassword" type="password" placeholder="Confirm password">
+            </div>
+            <button id="submitBtn" type="button" class="loginBtn f-s">SUBMIT</button>
+
+
+        </div>
+
+
+        <div id="wrapper">
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- inserimento e-mail 
+    <div class="container">
         <label for="campoEmail">E-mail</label>
         <input type="email" id="campoEmail">
 
-        <!-- inserimento password -->
+        inserimento password 
         <div class="container">
             <label for="campoPassword">Password</label>
             <input type="password" id="campoPassword">
@@ -39,9 +99,12 @@
                     <li><i class="bx bx-check"></i>Almeno 8 caratteri</li>
                 </ul>
             </div>
-        </div>
-        <script src="main.js"></script>
-    </div>
+        </div> 
+    </div> -->
+
+
+    <script src="./main.js"></script>
+
 </body>
 
 </html>

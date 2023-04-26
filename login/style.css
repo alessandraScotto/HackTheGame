@@ -1,102 +1,121 @@
-:root { 
-    --white:#f2f6fc;
-    --black:#0a0a0a;
-    --red: #be1818;
+:root {
+    --red-first: #570D0D;
+    --red-sec: #a70f00;
+    --red-thi: #C31400;
 }
 
-*, 
-::before,
-::after { 
+
+.f-p {
+    font-family: 'Jura', sans-serif;
+
+}
+
+.f-s {
+    font-family: 'Aboreto', sans-serif;
+
+}
+
+.f-o {
+    font-family: 'Roboto Slab', sans-serif;
+    letter-spacing: 0.2em;
+}
+
+
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.087), rgba(255, 255, 255, 0.041)), url(../css/WallpaperDog-209472.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-body { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: 'Delicious Handrawn', cursive;
-    background-color: var(--black);
-    color: var(--red);
-}
-.container { 
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: min(90%-250px);
-}
-label { 
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    font-weight: 300;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-}
-#campoPassword { 
-    position: relative;
-    height: 50px;
-    font-size: 20px;
-    font-weight: 400;
-    padding-left: 25px;
-    padding-right: 52px;
-    border-radius: 25px;
-    letter-spacing: 3px;
-    border: none;
-    outline: none;
-    transition:.2s ease;
-}
-#campoEmail { 
-    position: relative;
-    height: 50px;
-    font-size: 20px;
-    font-weight: 400;
-    padding-left: 25px;
-    padding-right: 52px;
-    border-radius: 25px;
-    letter-spacing: 3px;
-    border: none;
-    outline: none;
-    transition:.2s ease;
-}
-.icon i {
-    position: absolute;
-    color: var(--red);
-    line-height: 45px;
-    font-size: 25px;
-    right: 22px;
-    top: 60px;
-}
-.check-validi { 
-margin: 20px 0;
-padding: 20px 25px;
-background-color: var(--red);
-border-radius: 25px;
-transition: .2s ease;
-opacity: 1;
-}
-.check-validi ul { 
-list-style: none;
 }
 
-.check-validi ul li { 
-position: relative;
-font-size: 25px;
-font-weight: 200;
-letter-spacing: 3px;
-margin: 8px 0;
-color: var(--black);
-transition: .2s;
+
+
+
+
+
+
+.form-box {
+
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 12% auto;
+    padding: 50px 0;
+    color: white;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
 }
-.check-validi ul li i { 
-font-size: 20px;
-margin-right: 8px;
+
+h2 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
 }
-.check-validi ul li.checked { 
-    color: var(--white);
-    font-weight: 500;
+
+.divMain {
+    display: flex;
+    justify-content: space-around;
 }
-.nascondi { 
-    opacity: 0;
+
+.div-log {
+    background: transparent;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1em;
+    border: 1px white solid;
+    width: 40%;
+    transition: all .4s ease;
 }
+
+.div-log:hover {
+    background-color: var(--red-first);
+}
+
+.p-log {
+    text-align: center;
+}
+
+
+.input-box {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px white solid;
+    width: 80%;
+    margin: 31px auto;
+
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 90%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1em;
+
+}
+
+.loginBtn {
+    margin: 40px auto 20px;
+    width: 30%;
+    padding: 10px;
+    border: 1px white solid;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1em;
+    display: block;
+    transition: all .4s ease;
+}
+
+button:hover {
+    background-color: var(--red-first);
+
+}
+
+.login {
+    display: none;
+}
+
